@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://use.fontawesome.com/de50a042e8.js"></script>
+    <link rel="stylesheet" href="css/glider.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+    <title>glider js test dao interior</title>
+</head>
+
+<body>
+
+    <div class="glider-contain multiple">
+        <button class="glider-prev" id="glider-prev1">
+            <i class="fa fa-chevron-left"></i>
+        </button>
+        <div class="glider" id="glider-1">
+            <div class="glide-item">
+                <img src="img/dao-imac-landing.png" alt="">
+            </div class="glide-item">
+            <div class="glide-item">
+                <img src="img/dao-imac-livingroom.png" alt="">
+            </div class="glide-item">
+            <div class="glide-item">
+                <img src="img/dao-imac-kitchen.png" alt="">
+            </div class="glide-item">
+            <div class="glide-item">
+                <img src="img/dao-imac-bedroom.png" alt="">
+            </div class="glide-item">
+            <div class="glide-item">
+                <img src="img/dao-imac-bathroom.png" alt="">
+            </div class="glide-item">
+            <div class="glide-item">
+                <img src="img/dao-imac-garden.png" alt="">
+            </div class="glide-item">
+            <div class="glide-item">
+                <img src="img/dao-ipad-contact.png" alt="">
+            </div class="glide-item">
+        </div>
+        <button class="glider-next" id="glider-next1">
+            <i class="fa fa-chevron-right"></i>
+        </button>
+
+        <div id="dots1" class="glider-dots"></div>
+    </div>
+
+    <div class="glider-contain multiple">
+        <button class="glider-prev" id="glider-prev2">
+            <i class="fa fa-chevron-left"></i>
+        </button>
+        <div class="glider" id="glider-2">
+            <div class="glide-item">
+                <img src="img/dao-ipad-landing.png" alt="">
+            </div class="glide-item">
+            <div class="glide-item">
+                <img src="img/dao-ipad-livingroom.png" alt="">
+            </div class="glide-item">
+            <div class="glide-item">
+                <img src="img/dao-ipad-kitchen.png" alt="">
+            </div class="glide-item">
+            <div class="glide-item">
+                <img src="img/dao-ipad-bedroom.png" alt="">
+            </div class="glide-item">
+            <div class="glide-item">
+                <img src="img/dao-ipad-bathroom.png" alt="">
+            </div class="glide-item">
+            <div class="glide-item">
+                <img src="img/dao-ipad-garden.png" alt="">
+            </div class="glide-item">
+            <div class="glide-item">
+                <img src="img/dao-ipad-contact.png" alt="">
+            </div class="glide-item">
+        </div>
+        <button class="glider-next" id="glider-next2">
+            <i class="fa fa-chevron-right"></i>
+        </button>
+
+        <div id="dots2" class="glider-dots"></div>
+    </div>
+
+    <div class="glider-contain multiple">
+        <button class="glider-prev" id="glider-prev3">
+            <i class="fa fa-chevron-left"></i>
+        </button>
+        <div class="glider" id="glider-3">
+            <div class="glide-item">
+                <img src="img/dao-iphone-landing.png" alt="">
+            </div class="glide-item">
+            <div class="glide-item">
+                <img src="img/dao-iphone-livingroom.png" alt="">
+            </div class="glide-item">
+            <div class="glide-item">
+                <img src="img/dao-iphone-kitchen.png" alt="">
+            </div class="glide-item">
+            <div class="glide-item">
+                <img src="img/dao-iphone-bedroom.png" alt="">
+            </div class="glide-item">
+            <div class="glide-item">
+                <img src="img/dao-iphone-bathroom.png" alt="">
+            </div class="glide-item">
+            <div class="glide-item">
+                <img src="img/dao-iphone-garden.png" alt="">
+            </div class="glide-item">
+            <div class="glide-item">
+                <img src="img/dao-iphone-contact.png" alt="">
+            </div class="glide-item">
+        </div>
+        <button class="glider-next" id="glider-next3">
+            <i class="fa fa-chevron-right"></i>
+        </button>
+
+        <div id="dots3" class="glider-dots"></div>
+    </div>
+
+    <script src="glider.min.js"></script>
+
+    <!-- <script>
+        new Glider(document.querySelector('.glider'), {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            draggable: true,
+            scrollLock: true,
+            dots: '#dots',
+            arrows: {
+                prev: '.glider-prev',
+                next: '.glider-next'
+            }
+        });
+    </script> -->
+    <script>
+        new Glider(document.getElementById('glider-1'), {
+            slidesToShow: 1,
+            dots: '#dots1',
+            draggable: true,
+            scrollLock: true,
+            arrows: {
+                prev: '#glider-prev1',
+                next: '#glider-next1'
+            },
+        });
+
+        new Glider(document.getElementById('glider-2'), {
+            slidesToShow: 1,
+            dots: '#dots2',
+            draggable: true,
+            scrollLock: true,
+            arrows: {
+                prev: '#glider-prev2',
+                next: '#glider-next2'
+            },
+        });
+
+        new Glider(document.getElementById('glider-3'), {
+            slidesToShow: 1,
+            dots: '#dots3',
+            draggable: true,
+            arrows: {
+                prev: '#glider-prev3',
+                next: '#glider-next3'
+            },
+        });
+    </script>
+</body>
+
+</html>
